@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   bitcoin.hpp                                        :+:      :+:    :+:   */
+/*   BitcoinExchange.hpp                                :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: aammirat <aammirat@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/12 16:41:45 by aammirat          #+#    #+#             */
-/*   Updated: 2025/01/12 16:47:54 by aammirat         ###   ########.fr       */
+/*   Updated: 2025/01/15 13:44:41 by aammirat         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,12 +14,22 @@
 # define BITCOIN_HPP
 
 #include <iostream>
+#include <fstream>
+#include <map>
+#include <cstdlib> 
+#include <sstream>
 
-struct t_date
+class BitcoinExchange
 {
-    int year;
-    int month;
-    int day;
+    private : 
+        std::map<std::string, float> data;
+        
+    public :
+        BitcoinExchange(std::ifstream &file);
+        ~BitcoinExchange();
+        BitcoinExchange(const BitcoinExchange & copy);
+        BitcoinExchange &operator=(const BitcoinExchange &copy);
+        void    BitcoinCalc(std::ifstream &file);
 };
 
 #endif
