@@ -6,13 +6,13 @@
 #    By: aammirat <aammirat@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/01/12 18:09:52 by aammirat          #+#    #+#              #
-#    Updated: 2025/01/12 18:10:18 by aammirat         ###   ########.fr        #
+#    Updated: 2025/01/19 17:39:45 by aammirat         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME	= btc
+NAME	= PmergeMe
 
-SRCS	= PmergeMe
+SRCS	= main.cpp
 
 HEADERS = MutantStack.hpp
 

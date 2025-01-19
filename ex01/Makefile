@@ -6,15 +6,16 @@
 #    By: aammirat <aammirat@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/01/12 16:52:24 by aammirat          #+#    #+#              #
-#    Updated: 2025/01/12 17:02:51 by aammirat         ###   ########.fr        #
+#    Updated: 2025/01/16 12:30:08 by aammirat         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME	= btc
+NAME	= rpn 
 
-SRCS	= rpn
+SRCS	= main.cpp \
+			RPN.cpp
 
-HEADERS = MutantStack.hpp
+HEADERS = RPN.hpp
 
 CC 		= c++
 

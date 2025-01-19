@@ -6,7 +6,7 @@
 /*   By: aammirat <aammirat@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/14 09:55:26 by aammirat          #+#    #+#             */
-/*   Updated: 2025/01/15 14:01:28 by aammirat         ###   ########.fr       */
+/*   Updated: 2025/01/19 17:43:27 by aammirat         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -73,7 +73,7 @@ static int check_date(std::string date)
     std::istringstream isyear(date);
     if (!(isyear >> year >> dash1 >> month >> dash2 >> day))
         return (1);
-    if (year > 2024 || month < 1 || month > 12 || day < 1 || day > 31)
+    if (month < 1 || month > 12 || day < 1 || day > 31)
         return (1);
     if (year == 2009 && month == 1 && day < 2)
         return (1);
